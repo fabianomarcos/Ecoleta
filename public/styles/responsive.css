@@ -1,0 +1,80 @@
+@media (max-width: 1042px) {
+    #page-home {
+        height: 100vh;
+        background: url(/assets/home-background.svg) no-repeat;
+        background-position-x: right;
+        background-position-y: calc(100vh - calc(calc(calc(86px + 55px) + -33px) + 498px));
+        background-size: 270px;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results .cards img {
+        height: 250px;
+    }
+
+    @media screen and (max-width: 900px) {
+        #page-create-point .field-group {
+            flex-direction: column;
+        }
+
+        #page-create-point .field-group .field + .field {
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 569px) {
+            #page-home {
+                background-position-x: 90vw;
+            }
+
+            @media (max-width: 415px) {
+                #page-home {
+                    background-position-y: calc(100vh - calc(calc(calc(86px + 55px) + -35px) + 346px));
+                    margin-bottom: 12px;
+                    margin-top: -2em;
+                }
+
+                #page-home .register-point {
+                    position: absolute;
+                    bottom: 48px;
+                    left: 46%;
+                    display: -webkit-inline-box;
+                }
+                @media (max-width: 375px) {
+                    #page-home .register-point {
+                        position: absolute;
+                        bottom: 19px;
+                    }
+
+                    @media (max-width: 320px) {
+                        #page-home .register-point {
+                            display: none;
+                        }
+                        #page-home main h1 {
+                            font-size: 45px;
+                        }
+                    }
+                }
+            }
+        }
+            
+    }
+}
